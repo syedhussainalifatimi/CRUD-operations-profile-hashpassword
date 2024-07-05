@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
+import Admin from './components/Admin/Admin/Admin';
+import TeachersDetails from './components/Admin/Dashboarditems/teachersdetail/TeachersDetails';
+import AddNewTeacher from './components/Admin/Dashboarditems/addnewTeacher/AddNewTeacher';
+import Dashboard from './components/Admin/Dashboard/Dashboard';
+import UpdateTeacher from './components/Admin/Dashboarditems/updateTeacherDetails/UpdateTeacher';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Routes>
+      <Route path="/" element={<Admin/>}/>
+      <Route path="/admin/dashboard" element={<Dashboard/>}/>
+      <Route path="/admin/teachersdetails" element ={<TeachersDetails/>}/>
+      <Route path="/admin/addnewteacher" element ={<AddNewTeacher/>}/>
+      <Route path="/admin/updateteacher" element ={<UpdateTeacher/>}/>
+    </Routes>      
     </div>
-  );
+  )
 }
 
-export default App;
