@@ -10,6 +10,7 @@ export default function UpdateTeacher() {
   const [updatedExperience, setUpdatedExperience] = useState('');
 
   const handleSubmit = async (e) => {
+
     e.preventDefault();
 
     try {

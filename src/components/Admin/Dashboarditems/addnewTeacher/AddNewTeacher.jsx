@@ -14,6 +14,7 @@ export default function AddNewTeacher() {
     age: ''
   });
 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setTeacherData({
@@ -42,6 +43,7 @@ export default function AddNewTeacher() {
       alert('Failed to add new teacher');
     }
   };
+
 
   return (
     <div className={Styles.maincontainer}>

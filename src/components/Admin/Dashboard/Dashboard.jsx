@@ -8,7 +8,9 @@ import Styles from './Dashboard.module.css';
 
 export default function Dashboard() {
   const dispatch = useDispatch();
+
   const navigate = useNavigate()
+
   const handleSignOut = () => {
     dispatch(signOutAdmin())
     navigate('/');

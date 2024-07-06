@@ -7,7 +7,9 @@ import axios from 'axios';
 
 export default function Admin() {
   const dispatch = useDispatch();
+
   const navigate = useNavigate();
+
   const [adminData, setAdminData] = useState([]);
   const signInInfo = useSelector((state) => state.adminDetails.adminInfo);
   const [email, setEmail] = useState('');

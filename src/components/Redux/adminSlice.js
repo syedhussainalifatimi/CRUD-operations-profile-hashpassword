@@ -6,6 +6,7 @@ const initialState = {
   }
 };
 
+
 const adminSlice = createSlice({
   name: "adminDetails",
   initialState,

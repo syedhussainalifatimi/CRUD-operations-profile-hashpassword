@@ -4,6 +4,7 @@ const initialState = {
   teachersInfo: []
 };
 
+
 export const teachersDetailsSlice = createSlice({
   name: 'teachersDetails',
   initialState,

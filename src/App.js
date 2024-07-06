@@ -10,6 +10,7 @@ export default function App() {
   return (
     <div>
     <Routes>
+      
       <Route path="/" element={<Admin/>}/>
       <Route path="/admin/dashboard" element={<Dashboard/>}/>
       <Route path="/admin/teachersdetails" element ={<TeachersDetails/>}/>

@@ -19,6 +19,7 @@ export default function TeachersDetails() {
     }
   };
 
+
   const handleUpdateTeacher = () => {
     navigate('/admin/updateteacher')
   }
